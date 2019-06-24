@@ -1,0 +1,13 @@
+[Unit]
+Description=Electrumx Bitcoin service
+After=network.target
+Requires=bitcoin.service
+
+[Service]
+EnvironmentFile=%h/.electrumx.conf
+ExecStart=/bin/bash -c "exec python3 ${HOME}/electrumx/electrumx_server >> ${DB_DIRECTORY}/log.txt 2>&1"
+LimitNOFILE=8192
+TimeoutStopSec=30min
+
+[Install]
+WantedBy=default.target

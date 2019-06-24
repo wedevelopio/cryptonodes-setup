@@ -1,0 +1,12 @@
+[Unit]
+Description=Bitcoin node service
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c "exec ${HOME}/bitcoin/bin/bitcoind"
+Type=exec
+Restart=on-failure
+TimeoutStopSec=10min
+
+[Install]
+WantedBy=default.target
