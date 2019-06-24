@@ -25,7 +25,7 @@ Now need to setup some configs
 ```
 mkdir -p ~/.bitcoin
 wget https://raw.githubusercontent.com/vlddm/cryptonodes-setup/master/bitcoin/bitcoin.conf -O ~/.bitcoin/bitcoin.conf
-wget https://raw.githubusercontent.com/vlddm/cryptonodes-setup/master/.electrumx.conf -O ~/.electrumx.conf
+wget https://raw.githubusercontent.com/vlddm/cryptonodes-setup/master/bitcoin/.electrumx.conf -O ~/.electrumx.conf
 
 mkdir -p ~/.config/systemd/user/
 wget https://raw.githubusercontent.com/vlddm/cryptonodes-setup/master/bitcoin/bitcoin.service -O ~/.config/systemd/user/bitcoin.service
