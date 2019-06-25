@@ -28,5 +28,5 @@ systemctl --user start geth-mainnet.service
 ```
 Check if node is running well: 
 `ps auxww | fgrep geth` should return process with full agruments and metadata.
-If not user `journalctl --user -u geth-mainnet.service` to check logs
+If not use `journalctl --user -u geth-mainnet.service` to check logs
 
