@@ -13,7 +13,15 @@ disable = false
 port = 8545
 interface = "local"
 cors = []
-apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "parity_accounts", "traces", "rpc", "shh", "shh_pubsub", "personal"]
+apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "parity_accounts", "traces", "rpc", "shh", "shh_pubsub"]
+hosts = ["none"]
+
+[websockets]
+disable = false
+port = 8546
+interface = "local"
+cors = []
+apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "parity_accounts", "traces", "rpc", "shh", "shh_pubsub"]
 hosts = ["none"]
 
 [footprint]
