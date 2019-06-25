@@ -16,7 +16,7 @@ wget https://raw.githubusercontent.com/vlddm/cryptonodes-setup/master/ethereum-p
 Next:
 ```
 mkdir -p .config/systemd/user/
-wget https://raw.githubusercontent.com/vlddm/cryptonodes-setup/master/ethereum-parity/parity.service -O .config/systemd/user/parity.service
+wget https://raw.githubusercontent.com/vlddm/cryptonodes-setup/master/ethereum-parity/parity.service -O ~/.config/systemd/user/parity.service
 
 mkdir -p ~/bin
 cd ~/bin
