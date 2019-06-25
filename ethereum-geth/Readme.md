@@ -14,7 +14,7 @@ wget https://raw.githubusercontent.com/vlddm/cryptonodes-setup/master/ethereum-g
 mkdir -p ~/bin
 cd ~/bin
 wget https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.8.27-4bcc0a37.tar.gz
-tar -xf geth-linux-amd64-1.8.27-4bcc0a37.tar.gz
+tar -xf geth-linux-amd64-1.8.27-4bcc0a37.tar.gz --strip 1
 ```
 
 Start it up:
