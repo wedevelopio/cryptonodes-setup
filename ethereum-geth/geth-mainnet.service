@@ -1,0 +1,14 @@
+[Unit]
+Description=Geth Ethereum Daemon
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c "exec $HOME/bin/geth --syncmode fast --nousb --cache 4096 --rpc --rpcport 8545 --rpcapi eth,web3,txpool,net --ws --wsorigins=* --wsapi eth,web3,txpool,net --wsport 8546"
+Restart=on-failure
+
+# Specifies which signal to use when killing a service. Defaults to SIGTERM.
+# SIGHUP gives parity time to exit cleanly before SIGKILL (default 90s)
+KillSignal=SIGHUP
+
+[Install]
+WantedBy=multi-user.target
