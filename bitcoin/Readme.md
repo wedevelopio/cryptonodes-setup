@@ -4,7 +4,6 @@ Create user and install packages:
 
 ```
 useradd --create-home btc
-mkdir ~btc/.ssh
 loginctl enable-linger btc
 apt install python3-pip
 ```
